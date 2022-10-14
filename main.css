@@ -1,0 +1,167 @@
+body{
+    background-color: black;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("imagenes/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    color: aliceblue;
+    text-align: center;
+}
+
+#nombre{
+    font-size: 100px;
+    color: white;
+    font-family: cursive;
+    animation: neonEffect 10s infinite;
+    padding: 0px;
+    margin: 0px;
+}
+
+@keyframes neonEffect {
+    0%, 35%, 45%, 65%, 100%{
+        text-shadow: 
+        white 0 0 12px,
+        #effd6d 0 0 24px,
+        #effd6d 0 0 36px;
+    }
+
+    40%, 60% {
+        text-shadow: none;
+    }
+}
+
+
+#texto{
+    font-size: 100px;
+    padding: 150px;
+    margin-left: -45px;
+    margin-top: -50px;
+}
+
+.cuadrado{
+    background-color: white;
+    height: 500px;
+    width: 320px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    margin-top: -200px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 50px rgb(68, 68, 68),-6px -6px 50px rgb(68, 68, 68);
+    position: relative;
+}
+
+.cuadrado2{
+    background-color: white;
+    height: 500px;
+    width: 320px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 50px rgb(68, 68, 68),-6px -6px 50px rgb(68, 68, 68);
+    position: relative;
+}
+
+.cuadrado3{
+    background-color: white;
+    height: 500px;
+    width: 320px;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 6px 6px 50px rgb(68, 68, 68),-6px -6px 50px rgb(68, 68, 68);
+    position: relative;
+}
+
+.textolink{
+    font-size: 30px;
+    margin-top: 420px;
+    left: 60px;
+    text-align: center;
+    position: absolute;
+}
+
+.imagen{
+    height: 350px;
+    width: 200px;
+    top: 30px;
+    left: 60px;
+    right: 30px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+}
+
+#acerca{
+    font-size: 30px;
+    color: white;
+    font-family: cursive;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: -55px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  a:link {
+    color: black;
+  }
+  
+  a:visited {
+    color: grey;
+  }
+  
+  a:hover {
+    color: violet;
+  }
+  
+  a:active {
+    color: violet;
+}
+
+.contenedor{
+    max-width: 1700px;
+    padding: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:720px){
+    
+    .contenedor{
+        flex-direction: row;
+    }
+
+    .cuadrado2{
+        margin: 0px auto;
+        margin-top: -210px;
+    }
+
+    .cuadrado3{
+        margin: 0px auto;
+        margin-top: -210px;
+    }
+
+    body{
+        margin-bottom: 182px;
+    }
+}
+
+
+
+
+
+
+
+
